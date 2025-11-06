@@ -1,0 +1,18 @@
+name: 🔶 Epic
+description: "⚠️ For Project Maintainers: Create an Epic work item"
+type: "Epic"
+body:
+  - type: checkboxes
+    attributes:
+      label: Is this the right issue type?
+      description: "If you're not involved in work planning for this project, you're probably in the wrong place."
+      options:
+        - label: "Yes, I'm planning work for this project team."
+          required: true
+  - type: textarea
+    attributes:
+      label: Summary
+      description: |
+        A short description of the work item
+    validations:
+      required: true
